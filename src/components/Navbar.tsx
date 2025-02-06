@@ -1,4 +1,4 @@
-import Burger from "@/components/burgerMenu/Burger";
+import BurgerMenu from "./burgerMenu/BurgerMenu";
 import HomeButton from "./static/HomeButton";
 import PageLink from "./PageLink";
 import MobileLogo from "../../public/icons/mobileLogo.svg";
@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <>
       <nav className="flex justify-evenly p-1 w-screen bg-black">
-        <Burger />
+        <BurgerMenu />
         <HomeButton size={80} logo={MobileLogo} />
         <PageLink path="/contact" name="Contact" />
       </nav>
