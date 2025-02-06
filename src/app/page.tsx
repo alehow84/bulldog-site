@@ -1,4 +1,4 @@
-import Navbar from "@/components/Navbar";
+import Menu from "@/components/burgerMenu/Menu";
 
 export default function Home() {
   return (
