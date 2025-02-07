@@ -1,3 +1,3 @@
 export default function Privacy() {
-  return <h1>Privacy Policy</h1>;
+  return <h1 className="fixed top-40">Privacy Policy</h1>;
 }

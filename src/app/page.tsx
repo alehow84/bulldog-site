@@ -1,9 +1,10 @@
-import Navbar from "@/components/Navbar";
+import Menu from "@/components/burgerMenu/Menu";
+import Close from "@/components/burgerMenu/Close";
 
 export default function Home() {
   return (
     <>
-      <h1>Homepage</h1>
+      <h1 className="fixed top-40">Homepage</h1>
     </>
   );
 }
