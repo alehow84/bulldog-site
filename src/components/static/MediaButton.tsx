@@ -12,7 +12,7 @@ export default function Media({
 }) {
   return (
     <Link href={path} target="_blank">
-      <div className="p-2 cursor-grab">
+      <div className="p-3 md:p-6 cursor-grab">
         <Image
           src={mediaIcon}
           alt="Bulldog Developments social media link"

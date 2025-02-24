@@ -6,16 +6,16 @@ import TikTokLogo from "../../public/icons/tiktok.svg";
 export default function Footer() {
   return (
     <>
-      <footer className="md:hidden flex flex-col items-center w-screen bg-black text-white pt-3 pb-3">
-        <div className="w-3/5 pt-2 pb-2">
-          <p className="text-xs p-0.5 text-center">
+      <footer className="flex flex-col md:flex-row md:justify-evenly items-center w-screen bg-black text-white pt-3 pb-3">
+        <div className="w-3/5 md:w-1/3 px-3 py-2 justify-center">
+          <p className="text-xs font-bold py-0.5 text-center md:text-left">
             Bulldog Developments & Consultancy Ltd © 2025
           </p>
-          <p className="text-xs p-0.5 text-center">
+          <p className="text-xs py-0.5 md:py-3 text-center md:text-left md:w-7/12">
             Ellendale House, 21 St. Stephens Road, Norwich, Norfolk NR1 3SP
           </p>
         </div>
-        <div className="flex gap-2">
+        <div className="flex justify-center pt-2 pb-2 md:w-1/3">
           <Media
             size={30}
             mediaIcon={InstaLogo}
@@ -27,12 +27,14 @@ export default function Footer() {
             path="https://www.tiktok.com/@bulldogdevuk?_t=ZN-8uBeBsS9EQR&_r=1"
           />
         </div>
-        <PageLink name="Terms & Conditions" path="/terms" textSize="small" />
-        <PageLink
-          name="Privacy Policy"
-          path="privacy-policy"
-          textSize="small"
-        />
+        <div className="md:w-1/3 flex flex-col items-center md:items-end px-3">
+          <PageLink name="Terms & Conditions" path="/terms" textSize="small" />
+          <PageLink
+            name="Privacy Policy"
+            path="privacy-policy"
+            textSize="small"
+          />
+        </div>
       </footer>
     </>
   );
