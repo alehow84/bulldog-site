@@ -8,11 +8,13 @@ export default function Media({
   mediaIcon: any;
 }) {
   return (
-    <Image
-      src={mediaIcon}
-      alt="Bulldog Developments social media link"
-      height={size}
-      width={size}
-    />
+    <div className="p-2">
+      <Image
+        src={mediaIcon}
+        alt="Bulldog Developments social media link"
+        height={size}
+        width={size}
+      />
+    </div>
   );
 }
