@@ -11,13 +11,7 @@ export default function HomeButton({
   return (
     <Link href="/">
       <div className="hover:scale-110 transition ease-in-out duration-200s overflow-hidden relative">
-        <Image
-          src={logo}
-          alt="Go to homepage"
-          height={size}
-          width={size}
-          className="block cover"
-        />
+        <Image src={logo} alt="Go to homepage" height={size} width={size} />
       </div>
     </Link>
   );

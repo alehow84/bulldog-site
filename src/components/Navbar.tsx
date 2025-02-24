@@ -5,7 +5,6 @@ import HomeButton from "./static/HomeButton";
 import PageLink from "./PageLink";
 import MobileLogo from "../../public/icons/mobileLogo.svg";
 import DesktopLogo from "../../public/icons/desktopLogo.svg";
-import MobLogo from "../../public/icons/mobileLogo2.svg";
 import Menu from "./burgerMenu/Menu";
 
 import { useGlobalState } from "@/contexts/GlobalStateContext";

@@ -1,3 +1,9 @@
 export default function PropertyEnquiries() {
-  return <h1 className="fixed top-40">Property Enquiries</h1>;
+  return (
+    <>
+      <div className="h-screen">
+        <h1 className="relative top-20">Property Enquiries</h1>
+      </div>
+    </>
+  );
 }

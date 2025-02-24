@@ -1,3 +1,9 @@
 export default function Contact() {
-  return <h1 className="fixed top-40">Contact</h1>;
+  return (
+    <>
+      <div className="h-screen">
+        <h1 className="relative top-20">Contact Us</h1>
+      </div>
+    </>
+  );
 }

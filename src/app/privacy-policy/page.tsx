@@ -1,3 +1,9 @@
 export default function Privacy() {
-  return <h1 className="fixed top-40">Privacy Policy</h1>;
+  return (
+    <>
+      <div className="h-screen">
+        <h1 className="relative top-20">Privacy Policy</h1>
+      </div>
+    </>
+  );
 }
