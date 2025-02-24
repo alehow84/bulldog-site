@@ -33,14 +33,21 @@ export default function Navbar() {
       <nav className=" md:hidden fixed flex justify-evenly p-1 w-screen bg-black">
         <BurgerMenu />
         <div className="md:hidden">
-          <HomeButton height={80} width={80} logo={MobileLogo} />
+          <HomeButton size={80} logo={MobileLogo} />
         </div>
         <PageLink path="/contact" name="Contact" />
       </nav>
       {isMenuOpen ? <Menu /> : <></>}
       <div className="hidden md:block">
-        <nav className="flex flex-row fixed justify-evenly p-1 w-screen bg-black">
-          <PageLink path="/projects" name="PROJECTS" />
+        <nav className="flex flex-row fixed justify-evenly p-3 w-screen bg-black">
+          <PageLink path="/projects" name="Projects" />
+          <PageLink path="/about" name="About Us" />
+          <div
+            className="
+          "
+          >
+            <HomeButton size={250} logo={DesktopLogo} />
+          </div>
           <PageLink path="/property-enquiries" name="Property Enquiries" />
           <PageLink path="/for-sale" name="For Sale" />
           <PageLink path="/contact" name="Contact" />

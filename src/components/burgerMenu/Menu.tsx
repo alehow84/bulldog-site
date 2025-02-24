@@ -6,7 +6,6 @@ export default function Menu() {
       <PageLink name="Projects" path="/projects" />
       <PageLink name="About Us" path="/about" />
       <PageLink name="Property Enquiries" path="/property-enquiries" />
-      <PageLink name="For Sale" path="/for-sale" />
       <PageLink name="Contact Us" path="/contact" />
     </div>
   );
