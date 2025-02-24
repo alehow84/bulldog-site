@@ -6,7 +6,7 @@ import TikTokLogo from "../../public/icons/tiktok.svg";
 export default function Footer() {
   return (
     <>
-      <footer className="md:hidden flex flex-col items-center w-screen bg-black text-white">
+      <footer className="md:hidden flex flex-col items-center w-screen bg-black text-white pt-3 pb-3">
         <div className="w-3/5 pt-2 pb-2">
           <p className="text-xs p-0.5 text-center">
             Bulldog Developments & Consultancy Ltd © 2025
@@ -27,8 +27,12 @@ export default function Footer() {
             path="https://www.tiktok.com/@bulldogdevuk?_t=ZN-8uBeBsS9EQR&_r=1"
           />
         </div>
-        <PageLink name="Terms & Conditions" path="/terms" />
-        <PageLink name="Privacy Policy" path="privacy-policy" />
+        <PageLink name="Terms & Conditions" path="/terms" textSize="small" />
+        <PageLink
+          name="Privacy Policy"
+          path="privacy-policy"
+          textSize="small"
+        />
       </footer>
     </>
   );
