@@ -1,3 +1,9 @@
 export default function Terms() {
-  return <h1 className="fixed top-40">Terms & Conditions</h1>;
+  return (
+    <>
+      <div className="h-screen">
+        <h1 className="relative top-20">Terms & Conditions</h1>
+      </div>
+    </>
+  );
 }

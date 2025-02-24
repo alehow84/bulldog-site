@@ -5,7 +5,6 @@ import HomeButton from "./static/HomeButton";
 import PageLink from "./PageLink";
 import MobileLogo from "../../public/icons/mobileLogo.svg";
 import DesktopLogo from "../../public/icons/desktopLogo.svg";
-import MobLogo from "../../public/icons/mobileLogo2.svg";
 import Menu from "./burgerMenu/Menu";
 
 import { useGlobalState } from "@/contexts/GlobalStateContext";
@@ -35,22 +34,26 @@ export default function Navbar() {
         <div className="md:hidden">
           <HomeButton size={80} logo={MobileLogo} />
         </div>
-        <PageLink path="/contact" name="Contact" />
+        <PageLink path="/contact" name="Contact" textSize="medium" />
       </nav>
       {isMenuOpen ? <Menu /> : <></>}
       <div className="hidden md:block">
         <nav className="flex flex-row fixed justify-evenly p-3 w-screen bg-black">
-          <PageLink path="/projects" name="Projects" />
-          <PageLink path="/about" name="About Us" />
+          <PageLink path="/projects" name="Projects" textSize="medium" />
+          <PageLink path="/about" name="About Us" textSize="medium" />
           <div
             className="
           "
           >
             <HomeButton size={250} logo={DesktopLogo} />
           </div>
-          <PageLink path="/property-enquiries" name="Property Enquiries" />
-          <PageLink path="/for-sale" name="For Sale" />
-          <PageLink path="/contact" name="Contact" />
+          <PageLink
+            path="/property-enquiries"
+            name="Property Enquiries"
+            textSize="medium"
+          />
+          <PageLink path="/for-sale" name="For Sale" textSize="medium" />
+          <PageLink path="/contact" name="Contact" textSize="medium" />
         </nav>
       </div>
     </>

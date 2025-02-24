@@ -1,3 +1,9 @@
 export default function About() {
-  return <h1 className="fixed top-40">About</h1>;
+  return (
+    <>
+      <div className="h-screen">
+        <h1 className="relative top-20">About Us</h1>
+      </div>
+    </>
+  );
 }
