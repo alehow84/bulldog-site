@@ -1,20 +1,25 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Media({
   size,
   mediaIcon,
+  path,
 }: {
   size: number;
   mediaIcon: any;
+  path: string;
 }) {
   return (
-    <div className="p-2">
-      <Image
-        src={mediaIcon}
-        alt="Bulldog Developments social media link"
-        height={size}
-        width={size}
-      />
-    </div>
+    <Link href={path} target="_blank">
+      <div className="p-2 cursor-grab">
+        <Image
+          src={mediaIcon}
+          alt="Bulldog Developments social media link"
+          height={size}
+          width={size}
+        />
+      </div>
+    </Link>
   );
 }

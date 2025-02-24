@@ -15,9 +15,17 @@ export default function Footer() {
             Ellendale House, 21 St. Stephens Road, Norwich, Norfolk NR1 3SP
           </p>
         </div>
-        <div className="flex">
-          <Media size={30} mediaIcon={InstaLogo} />
-          <Media size={30} mediaIcon={TikTokLogo} />
+        <div className="flex gap-2">
+          <Media
+            size={30}
+            mediaIcon={InstaLogo}
+            path="https://www.instagram.com/bulldogdevuk/?igsh=MXVvbHJoYmlpY2htbA%3D%3D&utm_source=qr"
+          />
+          <Media
+            size={30}
+            mediaIcon={TikTokLogo}
+            path="https://www.tiktok.com/@bulldogdevuk?_t=ZN-8uBeBsS9EQR&_r=1"
+          />
         </div>
         <PageLink name="Terms & Conditions" path="/terms" />
         <PageLink name="Privacy Policy" path="privacy-policy" />
