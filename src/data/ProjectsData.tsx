@@ -5,8 +5,8 @@ export interface Project {
   id: string;
   name: string;
   description: string;
-  mainImage: StaticImageData | null;
-  carouselImages: StaticImageData[] | null;
+  mainImage: any;
+  carouselImages: any;
   forSaleBool: boolean;
   archiveBool: boolean;
   buildCompletionDate: string;
@@ -27,7 +27,7 @@ export const projects: Project[] = [
     id: "p2",
     name: "London Road, Pakefield",
     description: "Residential new build",
-    mainImage: WestFarm,
+    mainImage: null,
     carouselImages: null,
     forSaleBool: false,
     archiveBool: true,
@@ -67,7 +67,7 @@ export const projects: Project[] = [
     id: "p6",
     name: "Homebuilding Company England",
     description: "Quality new builds",
-    mainImage: null,
+    mainImage: WestFarm,
     carouselImages: null,
     forSaleBool: false,
     archiveBool: false,

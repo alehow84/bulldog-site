@@ -1,12 +1,15 @@
-import Menu from "@/components/burgerMenu/Menu";
-import Close from "@/components/burgerMenu/Close";
+import { Project, projects } from "@/data/ProjectsData";
+import ProjectTile from "@/components/ProjectTile";
 
 export default function Home() {
   return (
     <>
-      <div className="h-screen">
-        <h1 className="relative top-20">Homepage</h1>
-      </div>
+      <main className="relative top-32 h-screen flex flex-col items-center">
+        <h1 className="">Homepage</h1>
+        <div className="flex md:grid-cols-3 grid-cols-2 items-center gap-8">
+          <ProjectTile project={projects[5]} />
+        </div>
+      </main>
     </>
   );
 }

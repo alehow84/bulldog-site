@@ -32,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${monserrat.className}`}>
+      <body className={`${monserrat.className} max-w-screen`}>
         <GlobalStateProvider>
           <Navbar />
           {children}

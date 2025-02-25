@@ -29,7 +29,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className=" md:hidden fixed flex justify-evenly p-1 w-screen bg-black">
+      <nav className=" md:hidden fixed z-10 flex justify-evenly p-1 w-screen bg-black">
         <BurgerMenu />
         <div className="md:hidden">
           <HomeButton size={80} logo={MobileLogo} />
@@ -38,7 +38,7 @@ export default function Navbar() {
       </nav>
       {isMenuOpen ? <Menu /> : <></>}
       <div className="hidden md:block">
-        <nav className="flex flex-row fixed justify-evenly p-3 w-screen bg-black">
+        <nav className="flex flex-row fixed z-10 justify-evenly p-3 w-screen bg-black">
           <PageLink path="/projects" name="Projects" textSize="medium" />
           <PageLink path="/about" name="About Us" textSize="medium" />
           <div
