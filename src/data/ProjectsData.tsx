@@ -9,7 +9,8 @@ export interface Project {
   carouselImages: any;
   forSaleBool: boolean;
   archiveBool: boolean;
-  buildCompletionDate: string;
+  buildCompletionStatus: string;
+  link: string;
 }
 
 export const projects: Project[] = [
@@ -21,7 +22,8 @@ export const projects: Project[] = [
     carouselImages: null,
     forSaleBool: false,
     archiveBool: true,
-    buildCompletionDate: "2006",
+    buildCompletionStatus: "Completed 2006",
+    link: "",
   },
   {
     id: "p2",
@@ -31,7 +33,8 @@ export const projects: Project[] = [
     carouselImages: null,
     forSaleBool: false,
     archiveBool: true,
-    buildCompletionDate: "1997",
+    buildCompletionStatus: "Completed 1997",
+    link: "",
   },
   {
     id: "p3",
@@ -41,7 +44,8 @@ export const projects: Project[] = [
     carouselImages: null,
     forSaleBool: true,
     archiveBool: false,
-    buildCompletionDate: "2025",
+    buildCompletionStatus: "Completed 2025",
+    link: "",
   },
   {
     id: "p4",
@@ -51,7 +55,8 @@ export const projects: Project[] = [
     carouselImages: null,
     forSaleBool: true,
     archiveBool: false,
-    buildCompletionDate: "Jan 2024",
+    buildCompletionStatus: "Completed Jan 2024",
+    link: "",
   },
   {
     id: "p5",
@@ -61,16 +66,20 @@ export const projects: Project[] = [
     carouselImages: null,
     forSaleBool: false,
     archiveBool: false,
-    buildCompletionDate: "work ongoing",
+    buildCompletionStatus: "Work ongoing",
+    link: "",
   },
   {
     id: "p6",
     name: "Homebuilding Company England",
-    description: "Quality new builds",
+    description:
+      "The joint venture of two families, coming together to provide quality new builds",
     mainImage: WestFarm,
     carouselImages: null,
     forSaleBool: false,
     archiveBool: false,
-    buildCompletionDate: "work ongoing",
+    buildCompletionStatus:
+      "The redevelopment of West Farm, Thorpe, has started.",
+    link: "https://homebuildingcompanyengland.com/",
   },
 ];

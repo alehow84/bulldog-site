@@ -4,12 +4,14 @@ import ProjectTile from "@/components/ProjectTile";
 export default function Home() {
   return (
     <>
-      <main className="relative top-32 h-screen flex flex-col items-center">
+      {/* remove pb-10 in div class name when there is more page content to see if it still works */}
+      <div className="relative pt-32 pb-10 min-h-screen flex flex-col items-center">
         <h1 className="">Homepage</h1>
-        <div className="flex md:grid-cols-3 grid-cols-2 items-center gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 justify-center gap-6 px-8">
+          <ProjectTile project={projects[5]} />
           <ProjectTile project={projects[5]} />
         </div>
-      </main>
+      </div>
     </>
   );
 }
