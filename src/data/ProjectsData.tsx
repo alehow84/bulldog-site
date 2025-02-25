@@ -1,5 +1,5 @@
-import { StaticImageData } from "next/image";
 import WestFarm from "../../public/images/WestFarmDemo.png";
+import OfficeDev from "../../public/images/WestFarmDemo.png";
 
 export interface Project {
   id: string;
@@ -62,7 +62,7 @@ export const projects: Project[] = [
     id: "p5",
     name: "St. Stephens Road, Norwich",
     description: "Office site redevelopment to residential flats",
-    mainImage: null,
+    mainImage: OfficeDev,
     carouselImages: null,
     forSaleBool: false,
     archiveBool: false,
@@ -79,7 +79,7 @@ export const projects: Project[] = [
     forSaleBool: false,
     archiveBool: false,
     buildCompletionStatus:
-      "The redevelopment of West Farm, Thorpe, has started.",
-    link: "https://homebuildingcompanyengland.com/",
+      "HCE are currently working on the redevelopment of West Farm, Thorpe.",
+    link: "https://homebuildingcompanyengland.com/news/",
   },
 ];
