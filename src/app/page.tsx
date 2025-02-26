@@ -12,7 +12,17 @@ export default function Home() {
           <ProjectTile key={projects[5].id} project={projects[5]} />
         </div>
       </div>
-      <div className="w-full min-h-screen bg-gray-100"></div>
+      <div className="w-full h-[80vh] bg-gray-100 flex flex-col items-center justify-center">
+        <h2 className="text-3xl font-medium py-5">
+          "Attitude is a small thing that makes a big difference"
+        </h2>
+        <div className="w-3/5 h-1 bg-slate-700 rounded-full my-4"></div>
+        <p className="text-lg w-2/3 text-center py-5">
+          We believe in giving our best efforts in every project we're working
+          on. Our focus is on breathing life into old plots, repurposing to make
+          the most out of a space and ensuring a quality result.
+        </p>
+      </div>
     </>
   );
 }

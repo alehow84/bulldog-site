@@ -1,6 +1,5 @@
 import WestFarm from "../../public/images/WestFarmDemo.png";
-import OfficeDev from "../../public/images/OfficeDev.png";
-import Office from "../../public/images/Office.png";
+import Office from "../../public/images/OfficeRedev.png";
 
 export interface Project {
   id: string;
