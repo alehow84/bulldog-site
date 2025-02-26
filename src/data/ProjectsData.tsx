@@ -1,5 +1,6 @@
 import WestFarm from "../../public/images/WestFarmDemo.png";
-import OfficeDev from "../../public/images/WestFarmDemo.png";
+import OfficeDev from "../../public/images/OfficeDev.png";
+import Office from "../../public/images/Office.png";
 
 export interface Project {
   id: string;
@@ -61,13 +62,13 @@ export const projects: Project[] = [
   {
     id: "p5",
     name: "St. Stephens Road, Norwich",
-    description: "Office site redevelopment to residential flats",
-    mainImage: OfficeDev,
+    description: "Office site redevelopment into residential flats",
+    mainImage: Office,
     carouselImages: null,
     forSaleBool: false,
     archiveBool: false,
     buildCompletionStatus: "Work ongoing",
-    link: "",
+    link: "/contact",
   },
   {
     id: "p6",
