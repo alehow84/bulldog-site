@@ -32,10 +32,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${monserrat.className}`}>
+      <body
+        className={`${monserrat.className} max-w-screen flex flex-col min-h-screen`}
+      >
         <GlobalStateProvider>
           <Navbar />
-          {children}
+          <main className="flex-grow">{children}</main>
           <Footer />
         </GlobalStateProvider>
       </body>
