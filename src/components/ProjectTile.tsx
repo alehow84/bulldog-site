@@ -2,16 +2,9 @@ import Image from "next/image";
 import { Project } from "@/data/ProjectsData";
 import Link from "next/link";
 
-/*
-requirements
--take arguments for 1. Project
-- will use project.mainImg and project.forSaleBool
-*/
-
 export default function ProjectTile({ project }: { project: Project }) {
   return (
     <div className="relative w-full h-full rounded-lg shadow-md shadow-slate-500 overflow-hidden">
-      {/*will need to amend how to refer to project details below */}
       <Image
         key={project.mainImage}
         src={project.mainImage}
