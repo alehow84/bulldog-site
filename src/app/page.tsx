@@ -1,5 +1,7 @@
 import { projects } from "@/data/ProjectsData";
+import { images } from "@/data/ImageData";
 import ProjectTile from "@/components/ProjectTile";
+import LinkTile from "@/components/LinkTile";
 
 export default function Home() {
   return (
@@ -22,6 +24,13 @@ export default function Home() {
           on. Our focus is on breathing life into old plots, repurposing to make
           the most out of a space and ensuring a quality result.
         </p>
+      </div>
+      <div className="w-full h-[80vh] bg-white flex flex-col items-center justify-center"></div>
+      <div className="w-full min-h-screen pb-10 pt-10 px-4 bg-gray-100 flex flex-col items-center justify-center">
+        <div className="w-full max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 justify-center gap-10 px-6">
+          <LinkTile image={images[0]} />
+          <LinkTile image={images[1]} />
+        </div>
       </div>
     </>
   );
