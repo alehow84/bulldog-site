@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <>
       <footer className="flex flex-col md:flex-row md:justify-evenly items-center w-screen bg-black text-white pt-3 pb-3">
-        <div className="text-xs w-3/5 md:w-1/3 px-3 py-2 justify-center">
+        <div className="text-xs w-3/5 md:w-1/3 px-5 py-2 justify-center">
           <p className="font-bold py-0.5 text-center md:text-left">
             Bulldog Developments & Consultancy Ltd © 2025
           </p>
@@ -31,7 +31,7 @@ export default function Footer() {
             path="https://www.tiktok.com/@bulldogdevuk?_t=ZN-8uBeBsS9EQR&_r=1"
           />
         </div>
-        <div className="md:w-1/3 flex flex-col items-center md:items-end px-3">
+        <div className="md:w-1/3 flex flex-col items-center md:items-end px-5">
           <PageLink name="Terms & Conditions" path="/terms" textSize="small" />
           <PageLink
             name="Privacy Policy"
