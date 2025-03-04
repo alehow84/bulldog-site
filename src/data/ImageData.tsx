@@ -1,4 +1,4 @@
-import ProjectsImg from "../../public/images/ProjectsImg.png";
+import ProjectsImg from "../../public/images/OfficeRedev2.png";
 import AboutImg from "../../public/images/AboutUs.png";
 
 export interface ImageInfo {

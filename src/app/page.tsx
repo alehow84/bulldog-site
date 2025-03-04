@@ -26,8 +26,8 @@ export default function Home() {
         </p>
       </div>
       <div className="w-full h-[80vh] bg-white flex flex-col items-center justify-center"></div>
-      <div className="w-full min-h-screen pb-10 pt-10 px-4 bg-gray-100 flex flex-col items-center justify-center">
-        <div className="w-full max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 justify-center gap-10 px-6">
+      <div className="w-full min-h-screen pb-20 pt-10 px-4 bg-gray-100 flex flex-col items-center justify-center">
+        <div className="w-full max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 justify-center gap-10 px-2">
           <LinkTile image={images[0]} />
           <LinkTile image={images[1]} />
         </div>
