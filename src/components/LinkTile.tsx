@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ImageInfo } from "@/data/ImageData";
+import { LinkTileData } from "@/data/ImageData";
 
-export default function LinkTile({ image }: { image: ImageInfo }) {
+export default function LinkTile({ image }: { image: LinkTileData }) {
   return (
     <Link href={image.linkPath}>
       <div className="relative w-full h-full rounded-lg shadow-md shadow-slate-500 overflow-hidden">
