@@ -1,7 +1,8 @@
 import { projects } from "@/data/ProjectsData";
-import { linkTiles } from "@/data/ImageData";
+import { linkTiles, HomeImgs } from "@/data/ImageData";
 import ProjectTile from "@/components/ProjectTile";
 import LinkTile from "@/components/LinkTile";
+import ImageTile from "@/components/ImageTile";
 
 export default function Home() {
   return (
@@ -26,7 +27,11 @@ export default function Home() {
         </p>
       </div>
       <div className="w-full h-[80vh] bg-white flex flex-col items-center justify-center">
-        <div className="w-full max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3"></div>
+        <div className="w-full max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3">
+          <ImageTile image={HomeImgs[0]} />
+          <ImageTile image={HomeImgs[1]} />
+          <ImageTile image={HomeImgs[2]} />
+        </div>
       </div>
       <div className="w-full min-h-screen pb-20 pt-10 px-4 bg-gray-100 flex flex-col items-center justify-center">
         <div className="w-full max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 justify-center gap-10 px-2">
