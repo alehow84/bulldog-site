@@ -15,7 +15,7 @@ export default function LinkTile({ image }: { image: LinkTileData }) {
         <div className="z-10 absolute inset-x-0 bottom-0 h-1/2 flex items-center justify-center">
           <div className="flex flex-col bg-slate-800 bg-opacity-80 w-full h-full text-center justify-center px-2">
             <h2 className="text-white text-2xl p-6">{image.name}</h2>
-            <div className="w-2/3 h-1 rounded-full bg-white"></div>
+            <div className="w-2/3 h-1 rounded-e-full bg-white"></div>
           </div>
         </div>
       </div>
