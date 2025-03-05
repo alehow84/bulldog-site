@@ -19,6 +19,7 @@ export default function Home() {
           <ProjectTile key={projects[4].id} project={projects[4]} />
           <ProjectTile key={projects[5].id} project={projects[5]} />
         </div>
+
         <div className="w-full flex justify-end mt-14 mb-4">
           <div className="w-1/3">
             <Link href="/projects">
