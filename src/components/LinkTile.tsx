@@ -5,7 +5,7 @@ import { LinkTileData } from "@/data/ImageData";
 export default function LinkTile({ image }: { image: LinkTileData }) {
   return (
     <Link href={image.linkPath}>
-      <div className="relative w-full h-full rounded-lg shadow-md shadow-slate-500 overflow-hidden">
+      <div className="relative w-full h-full rounded-lg shadow-md shadow-slate-500 overflow-hidden hover:shadow-xl hover:shadow-slate-600 transition duration-200 ease-in-out">
         <Image
           key={image.id}
           src={image.photo}
